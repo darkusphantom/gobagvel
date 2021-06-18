@@ -1,0 +1,62 @@
+:root {
+  --color-primary: blue;
+  --color-secundary: green;
+
+  --bg-hero: url("../src/assets/photo2.jpg");
+}
+
+html,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Padauk", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lobster", sans-serif;
+  margin: 0;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  margin: 5vh auto;
+}
+
+.img__element {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.img__text {
+  font-size: 1.3em;
+}
+
+.title {
+  letter-spacing: 5px;
+  font-size: 2.3em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 1.3em;
+}
