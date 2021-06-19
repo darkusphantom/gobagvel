@@ -6,6 +6,10 @@
   height: 70vh;
 }
 
+.section__extra .title {
+  color: var(--color-secundary);
+}
+
 .section__extra .container {
   display: inherit;
   flex-direction: column;

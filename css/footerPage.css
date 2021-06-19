@@ -1,5 +1,5 @@
 .footerPage {
   width: 100%;
-  height: 100px;
-  background-color: blue;
+  height: 50px;
+  background-color: var(--color-primary);
 }

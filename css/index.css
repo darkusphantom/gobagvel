@@ -1,8 +1,9 @@
 :root {
-  --color-primary: blue;
-  --color-secundary: green;
+  --color-primary: #00aeef;
+  --color-secundary: #f99d1b;
 
-  --bg-hero: url("../src/assets/photo2.jpg");
+  --bg-hero: url("../src/assets/bg-hero.jpg");
+  --bg-section: url("../src/assets/bg-section.jpg");
 }
 
 html,
