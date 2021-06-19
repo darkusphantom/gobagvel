@@ -37,3 +37,21 @@
 .extra__description .text {
   font-size: 1em;
 }
+
+@media screen and (min-width: 1024px) {
+  .section__extra {
+    height: 100%;
+  }
+
+  .section__extra .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: 10vh 0;
+  }
+
+  .extra__description {
+    height: auto;
+  }
+}

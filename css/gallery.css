@@ -3,11 +3,13 @@
 }
 
 .gallery__header {
+  grid-area: galleryHeader;
   text-align: center;
   margin: 0 auto 90px auto;
 }
 
 .gallery__body {
+  grid-area: galleryBody;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(6, 1fr);
@@ -19,4 +21,22 @@
   max-width: 100%;
   margin: auto;
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery {
+    display: grid;
+    grid-template-areas:
+      "galleryHeader"
+      "galleryBody";
+  }
+
+  .gallery__header {
+    margin: 0 auto 30px auto;
+  }
+
+  .gallery__body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }

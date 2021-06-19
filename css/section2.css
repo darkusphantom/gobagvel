@@ -6,6 +6,8 @@
   padding: 50px 0;
   height: 70vh;
   color: white;
+  background: var(--bg-hero) no-repeat;
+  background-position: -640px -430px;
 }
 
 .section__WhoWeAre .container {
@@ -37,4 +39,25 @@
 
 .WhoWeAre__description .text {
   font-size: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .section__WhoWeAre,
+  .section__extra {
+    height: 100%;
+  }
+
+  .section__WhoWeAre .container,
+  .section__extra .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: 10vh 0;
+  }
+
+  .WhoWeAre__description,
+  .extra__description {
+    height: auto;
+  }
 }
