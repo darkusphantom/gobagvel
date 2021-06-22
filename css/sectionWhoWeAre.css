@@ -4,11 +4,9 @@
   align-items: center;
   background-color: green;
   padding: 50px 0;
-  height: 70vh;
+  height: 100%;
   color: white;
-  background: var(--bg-section) no-repeat;
-  background-position: center;
-  background-size: 100%;
+  background: url("../src/assets/photo2.jpg") no-repeat fixed center 100%;
 }
 
 .section__WhoWeAre .container {
@@ -21,7 +19,7 @@
 }
 
 .WhoWeAre__description {
-  width: 50%;
+  width: auto;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -29,8 +27,10 @@
 }
 
 .WhoWeAre__description .container__img {
-  width: 50%;
+  width: 30%;
+  max-width: 130px;
   margin: 0 auto 25px auto;
+  filter: invert(1);
 }
 
 .WhoWeAre__description .title {
@@ -39,26 +39,34 @@
 }
 
 .WhoWeAre__description .text {
+  width: 100%;
+  max-width: 50%;
   font-size: 1em;
 }
 
 @media screen and (min-width: 1024px) {
-  .section__WhoWeAre,
-  .section__extra {
-    height: 100%;
+  .section__WhoWeAre {
+    background: var(--bg-section) no-repeat fixed center;
+    height: 70vh;
   }
 
-  .section__WhoWeAre .container,
-  .section__extra .container {
+  .section__WhoWeAre .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     justify-items: center;
-    margin: 10vh 0;
+    margin: auto;
   }
 
-  .WhoWeAre__description,
-  .extra__description {
+  .WhoWeAre__description {
     height: auto;
+  }
+
+  .WhoWeAre__description .container__img {
+    margin: 0 auto 5px auto;
+  }
+
+  .WhoWeAre__description .text {
+    max-width: 70%;
   }
 }
