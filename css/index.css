@@ -45,6 +45,7 @@ h6 {
   width: 100%;
   max-width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 .img__text {
@@ -52,6 +53,7 @@ h6 {
 }
 
 .title {
+  text-align: center;
   letter-spacing: 5px;
   font-size: 2.3em;
   font-weight: 700;
