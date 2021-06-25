@@ -1,0 +1,89 @@
+@media screen and (min-width: 1024px) {
+  .section {
+    margin: 15vh auto;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  .text {
+    font-size: 0.9em;
+  }
+
+  .img__text {
+    font-size: 0.85em;
+  }
+
+  header.hero {
+    height: 85vh;
+    max-height: 90vw;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-areas:
+      "galleryHeader"
+      "galleryIMG"
+      "galleryBody";
+  }
+
+  .gallery__header {
+    margin: 0 auto 30px auto;
+  }
+
+  .gallery__body {
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 5px 0;
+  }
+
+  .section__extra {
+    height: 100%;
+  }
+
+  .section__intro .container__img {
+    width: 85%;
+    max-width: 100%;
+    height: 50vh;
+  }
+  .section__intro .container__img img {
+    object-fit: cover;
+  }
+
+  .section__extra .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: 10vh 0;
+  }
+
+  .extra__description {
+    height: auto;
+  }
+
+  .section__WhoWeAre {
+    background: var(--bg-section) no-repeat fixed center;
+    height: 70vh;
+  }
+
+  .section__WhoWeAre .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    margin: auto;
+  }
+
+  .WhoWeAre__description {
+    height: auto;
+  }
+
+  .WhoWeAre__description .container__img {
+    margin: 0 auto 5px auto;
+  }
+
+  .WhoWeAre__description .text {
+    max-width: 70%;
+  }
+}
