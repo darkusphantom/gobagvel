@@ -6,9 +6,8 @@
   --bg-section: url("../src/assets/bg-section.jpg");
 
   --fontFamily-padauk: "Padauk", sans-serif;
+  --fontFamily-lobster: "Lobster", cursive;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Padauk:wght@400;700&display=swap");
 
 html,
 *::after,
